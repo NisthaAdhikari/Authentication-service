@@ -13,6 +13,9 @@ const userSchema = new Schema(
             type: String,
             required: true
         },
+        token: {
+            type: String,
+        },
     },
     { timestamps: true } // Enable timestamps
 );
@@ -21,3 +24,4 @@ const userSchema = new Schema(
 const User = mongoose.model('User', userSchema,'users');
 //export the User model for use in other files
 module.exports = User;
+
